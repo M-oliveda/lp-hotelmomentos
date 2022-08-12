@@ -2,3 +2,6 @@
 
 # Ignore NodeJs modules
 node_modules/
+
+# Ignore the Parcel-cache folder
+.parcel-cache/
