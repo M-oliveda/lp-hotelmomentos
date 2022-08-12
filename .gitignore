@@ -1,0 +1,4 @@
+# This file will contain the files and folders that GIT will not allow to follow.
+
+# Ignore NodeJs modules
+node_modules/
