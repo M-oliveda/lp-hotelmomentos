@@ -5,3 +5,7 @@ node_modules/
 
 # Ignore the Parcel-cache folder
 .parcel-cache/
+
+# ignore all files starting with . or ~
+.*
+~*
