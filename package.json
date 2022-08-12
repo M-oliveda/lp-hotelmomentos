@@ -10,6 +10,7 @@
     "parcel-debug": "parcel ./src/index.html --dist-dir ./public --no-source-maps"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "2.7.0",
     "parcel": "^2.7.0"
   }
 }

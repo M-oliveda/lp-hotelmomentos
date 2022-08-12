@@ -1,0 +1,26 @@
+@import "https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  display: block;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: Merriweather, serif;
+}
+
