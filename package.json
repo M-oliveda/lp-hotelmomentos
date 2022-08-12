@@ -1,0 +1,15 @@
+{
+  "name": "lp-hotel-momentos",
+  "version": "1.0.0",
+  "description": "This is a fronted web development learning project.",
+  "repository": "https://github.com/M-oliveda/lp-hotelmomentos.git",
+  "author": "Mauricio Oliveda <moliveda@protonmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "parcel-debug": "parcel ./src/index.html --dist-dir ./public --no-source-maps"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
