@@ -1,3 +1,6 @@
+// Importing the defaults
+@use "./base/defaults";
+
 // Importing the components:
 @use "./components/button";
 @use "./components/card";
