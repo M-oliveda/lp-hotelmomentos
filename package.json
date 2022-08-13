@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "parcel-debug": "parcel ./src/index.html --dist-dir ./public --no-source-maps"
+    "parcel-debug": "parcel ./src/index.html --dist-dir ./dist --no-source-maps",
+    "parcel-prod": "parcel build ./src/index.html --dist-dir ./public --no-source-maps"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.7.0",

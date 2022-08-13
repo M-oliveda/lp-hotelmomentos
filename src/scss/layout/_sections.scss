@@ -1,0 +1,15 @@
+#aboutUs, #services, #pictures {
+    max-width: 80vw;
+    margin: 100px auto;
+}
+
+#aboutUsImage {
+    width: 90%;
+    height: 250px;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 6px;
+    margin: 57px auto;
+
+    object-fit: cover;
+}

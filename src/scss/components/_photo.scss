@@ -1,0 +1,25 @@
+.photo {
+    position: relative;
+}
+
+.photo__image {
+    border-radius: 6px;
+}
+
+.photo__title {
+    max-width: 150px;
+    padding: 8px 16px;
+    border-radius: 6px;
+
+    background-color: rgba(126, 126, 126, 0.85);
+    text-align: center;
+
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    color: #fff;
+
+    position: absolute;
+    bottom: 2.5%;
+    left: 5%;
+}

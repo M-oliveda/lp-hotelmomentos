@@ -1,0 +1,75 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+$bcolor: #76BA99;
+
+.hero {
+    height: 100vh;
+    background-color: $bcolor;
+    overflow: hidden;    
+}
+
+.hero__header {
+    max-width: 80vw;
+    margin: .5rem auto;
+    
+    @include flex-container(row,nowrap);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website-logo {
+    width: 90px;
+}
+
+.icon {
+    display: block;
+    width: 24px;
+    height: 15px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#burgerMenu {
+    background-image: url("../images/burger-menu.svg");
+}
+
+.hero__content {
+    max-width: 75%;
+    margin: 150px auto;
+}
+
+.hero__subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 120%;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $primary-color;
+}
+
+.hero__message {
+    font-size: 6vw;
+    font-weight: bold;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.hero__text {
+    margin-top: 15px;
+    margin-bottom: 25px;
+
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    color: #fff;
+}
