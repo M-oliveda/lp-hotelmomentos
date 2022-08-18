@@ -1,75 +1,112 @@
 @use "../abstracts/mixins" as *;
-@use "../abstracts/variables" as *;
 
-$bcolor: #76BA99;
+$bcolor: #76ba99;
 
 .hero {
-    height: 100vh;
-    background-color: $bcolor;
-    overflow: hidden;    
+  height: 100vh;
+  background-color: $bcolor;
+  overflow: hidden;
+
+  @media (min-width: 1280px) {
+    height: 80vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 45%,
+      rgba(118, 186, 153, 1) 45%,
+      rgba(118, 186, 153, 1) 100%
+    );
+  }
 }
 
 .hero__header {
-    max-width: 80vw;
-    margin: .5rem auto;
-    
-    @include flex-container(row,nowrap);
-    justify-content: space-between;
-    align-items: center;
+  width: 90vw;
+  margin: 1rem auto;
+
+  @include flex-container(row, nowrap);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .website-logo {
-    width: 90px;
+  width: 90px;
+
+  @media (min-width: 1280px) {
+    width: 150px;
+  }
 }
 
 .icon {
-    display: block;
-    width: 24px;
-    height: 15px;
+  display: block;
+  width: 24px;
+  height: 15px;
 
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #burgerMenu {
-    background-image: url("../images/burger-menu.svg");
+  background-image: url("../images/burger-menu.svg");
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .hero__content {
-    max-width: 75%;
-    margin: 150px auto;
+  width: 80%;
+  max-width: 480px;
+  margin: 150px auto;
+
+  @media (min-width: 1280px) {
+    margin: 15vh 0 0 15vw;
+  }
 }
 
 .hero__subtitle {
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 120%;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 120%;
 
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 
-    color: $primary-color;
+  color: var(--primary-color);
+
+  @media (min-width: 1280px) {
+    font-size: 2.5rem;
+    color: #876445;
+  }
 }
 
 .hero__message {
-    font-size: 6vw;
-    font-weight: bold;
-    line-height: 120%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 120%;
 
-    text-align: center;
+  text-align: center;
 
-    color: #fff;
+  color: #fff;
+
+  @media (min-width: 1280px) {
+    font-size: 3rem;
+    color: #000;
+  }
 }
 
 .hero__text {
-    margin-top: 15px;
-    margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 
-    font-size: 14px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
-    text-align: center;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
 
-    color: #fff;
+  color: #fff;
+
+  @media (min-width: 1280px) {
+    font-size: 16px;
+    color: #000;
+  }
 }

@@ -1,0 +1,66 @@
+// Importing mixins:
+@use "./abstracts/mixins" as *;
+
+// Importing the defaults
+@use "./base/defaults";
+
+// Importing required components:
+@use "./components/button";
+
+@keyframes confirmationIconAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.body__header {
+  padding: 1em 5em;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.confirmation-container {
+  width: 80vw;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @include flex-container(column, nowrap);
+  align-items: center;
+
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#confirmation-image {
+  max-width: 150px;
+  object-fit: cover;
+
+  animation-name: confirmationIconAnimation;
+  animation-duration: 1000ms;
+  animation-delay: 100ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.confirmation-container > .title {
+  text-align: center;
+  font-size: 35px;
+  line-height: 100%;
+
+  @media (min-width: 1280px) {
+    font-size: 45px;
+  }
+}
+
+.confirmation-container > .text {
+  max-width: 80%;
+  margin: 5px auto 25px auto;
+  text-align: center;
+  font-size: 15px;
+}

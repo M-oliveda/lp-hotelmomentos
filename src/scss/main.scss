@@ -5,25 +5,26 @@
 @use "./components/button";
 @use "./components/card";
 @use "./components/photo";
+@use "./components/contactForm";
+@use "./components/sidebar";
 
 // Importing the layout
 @use "./layout/header";
 @use "./layout/sections";
+@use "./layout/footer";
 
+// Common styles...
 .title {
-    font-size: 25px;
-    line-height: 120%;
+  font-size: 1.5rem;
+  line-height: 120%;
+
+  @media (min-width: 1280px) {
+    font-size: 2.2rem;
+  }
 }
 
 .text {
-    line-height: 130%;
-    letter-spacing: 0.03em;
-}
-
-.cards-container {
-    margin-top: 57px;
-}
-
-.photo-container {
-    margin-top: 57px;
+  max-width: 500px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
 }

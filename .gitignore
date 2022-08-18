@@ -6,6 +6,9 @@ node_modules/
 # Ignore the Parcel-cache folder
 .parcel-cache/
 
-# ignore all files starting with . or ~
+# Ignore all files starting with . or ~
 .*
 ~*
+
+# Ignore the 'dist' folder file, it will only be used in development mode inside the developers local machines.
+dist/

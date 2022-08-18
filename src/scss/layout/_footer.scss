@@ -1,0 +1,23 @@
+.body__footer {
+    padding: 2em 3em;
+    background-color: #545454;
+
+    color: #a5a5a5;
+}
+
+.disclamer-container {
+    margin: 25px 0;
+} 
+
+.disclamer-container > small {
+    margin: 5px 0;
+}
+
+.disclamer-container b {
+    color: #fff;
+    font-style: italic;
+}
+
+.body__footer small, address {
+    text-align: center;
+}

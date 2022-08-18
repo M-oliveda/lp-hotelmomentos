@@ -1,15 +1,35 @@
-#aboutUs, #services, #pictures {
-    max-width: 80vw;
-    margin: 100px auto;
+@use "../abstracts/mixins" as *;
+
+#aboutUs,
+#services,
+#pictures,
+#reservation {
+  width: 80vw;
+  max-width: 1300px;
+  margin: 100px auto;
 }
 
 #aboutUsImage {
-    width: 90%;
-    height: 250px;
-    max-width: 400px;
-    max-height: 300px;
-    border-radius: 6px;
-    margin: 57px auto;
+  width: 90%;
+  height: 250px;
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 6px;
 
-    object-fit: cover;
+  object-fit: cover;
+
+  @media (min-width: 769px) {
+    order: 1;
+  }
+}
+
+.info-container {
+  width: 80%;
+  margin: 57px auto;
+
+  @media (min-width: 769px) {
+    @include flex-container(row, nowrap);
+    align-items: center;
+    gap: 10px;
+  }
 }
