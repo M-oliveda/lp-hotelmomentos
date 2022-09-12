@@ -35,12 +35,20 @@
   @media (min-width: 1280px) {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-
-    &:focus {
-      outline: none;
-      border-color: #876445;
-    }
   }
+
+  &:focus {
+    outline: none;
+    border-color: #876445;
+  }
+}
+
+.text-input_invalid {
+  border-color: #ff1e00;
+}
+
+.text-input_valid {
+  border-color: #59ce8f;
 }
 
 .check-input {
@@ -49,11 +57,20 @@
   height: 20px;
   padding: 2px;
   border: 2px solid #000000;
-}
 
-.check-input:checked {
-  background-color: #876445;
-  background-clip: content-box;
+  &:focus {
+    outline: none;
+    border-color: #876445;
+  }
+
+  &:valid:not(&:placeholder-shown) {
+    border-color: #7fb77e;
+  }
+
+  &:checked {
+    background-color: #876445;
+    background-clip: content-box;
+  }
 }
 
 .checkbox-field > .field__label {
@@ -69,4 +86,8 @@
   padding: 14px 16px;
   border: none;
   margin-top: 25px;
+
+  &:focus {
+    outline: 2px solid #876445;
+  }
 }

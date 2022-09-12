@@ -11,7 +11,9 @@
     "parcel-prod": "parcel build './src/*.html' --dist-dir ./public --no-source-maps"
   },
   "devDependencies": {
+    "@parcel/packager-raw-url": "2.7.0",
     "@parcel/transformer-sass": "2.7.0",
+    "@parcel/transformer-webmanifest": "2.7.0",
     "parcel": "^2.7.0"
   }
 }

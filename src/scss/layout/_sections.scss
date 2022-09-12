@@ -15,11 +15,13 @@
   max-width: 400px;
   max-height: 300px;
   border-radius: 6px;
+  margin-bottom: 10px;
 
   object-fit: cover;
 
   @media (min-width: 769px) {
     order: 1;
+    width: auto;
   }
 }
 
@@ -31,5 +33,6 @@
     @include flex-container(row, nowrap);
     align-items: center;
     gap: 10px;
+    justify-content: center;
   }
 }

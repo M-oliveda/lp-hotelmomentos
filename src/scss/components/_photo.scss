@@ -5,6 +5,7 @@
 
   @include flex-container(row, wrap);
   gap: 25px;
+  justify-content: center;
 
   @media (min-width: 1280px) {
     @include flex-container(row, nowrap);

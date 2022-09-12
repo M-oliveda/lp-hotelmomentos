@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./images/website-logo.svg"
-      type="image/x-icon"
+    <meta
+      name="description"
+      content="Hotel Momentos ofrece un servicio de hospedaje dentro de la ciudad de Santa Fe."
     />
+    <meta name="keywords" content="HOTEL, HOSPEDAJE, RESTAURANTE, SANTA FE" />
+    <!-- Favicon links: -->
+    <link rel="icon" href="./images/website-logo.svg" type="image/svg+xml" />
+    <!-- 180×180 -->
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon-180x180.png" />
+    <!-- Manifest file: -->
+    <link rel="manifest" href="./images/manifest.webmanifest" />
+    <!-- Other links: -->
     <link rel="stylesheet" href="./scss/main.scss" />
     <title>Hotel Momentos | Hospedaje y Restaurante</title>
   </head>
@@ -132,6 +139,8 @@
                 placeholder="Ejemplo Ejemplo"
                 class="text-input"
                 required
+                pattern="^([A-Z]{1}[a-z]{2,}\s?){2,}$"
+                title="The full name should be at least two words separated by a space"
               />
             </label>
           </div>
@@ -140,10 +149,11 @@
               Escriba su email:
               <input
                 type="email"
-                name="fullname"
+                name="email"
                 class="text-input"
                 placeholder="ejemplo@ejemplo.com"
                 required
+                pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9._+-]+\.[a-z]{2,10}$"
               />
             </label>
           </div>
